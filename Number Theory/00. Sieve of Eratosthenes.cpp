@@ -18,7 +18,7 @@ void seive()
     {
         if(P[i]==0)
         {
-            for(ll j=i*i;j<=N;j+=(2*i))
+            for(ll j=i*i;j<N;j+=(2*i))
             {
                 P[j] = 1;
             }
