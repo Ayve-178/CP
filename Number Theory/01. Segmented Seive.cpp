@@ -37,10 +37,10 @@ void segmentedSeive(ll l, ll r)
             isPrime[j-l] = 1;
         }
         if(base == curPrime) isPrime[base-l] = 0;
-        for(ll i=0;i<r-l+1;i++)
-        {
-            if(isPrime[i]==0) cout<<i+l<< " ";
-        }
+    }
+    for(ll i=0;i<r-l+1;i++)
+    {
+        if(isPrime[i]==0) cout<<i+l<< " ";
     }
 }
 
