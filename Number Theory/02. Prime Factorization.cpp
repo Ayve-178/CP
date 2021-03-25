@@ -2,11 +2,10 @@
 
 using namespace std;
 #define ll long long
-#define mx 1000010
 
 vector <ll> primes, primeFactors;
 
-void seive()
+void seive(ll mx)
 {
     bool P[mx];
     memset(P, 0, sizeof(P));
@@ -54,7 +53,7 @@ void primeFactorization(ll n)
 
 int main()
 {
-    seive();
+    seive(100010);     /// To factorize N, we need to generate primes up to √N only.
     int t, n;
     cin>>t;
     while(t--)
