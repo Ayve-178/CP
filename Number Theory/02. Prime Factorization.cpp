@@ -30,7 +30,7 @@ void seive(ll mx)
 void primeFactorization(ll n)
 {
     primeFactors.clear();
-    for(ll i=0; primes[i]*primes[i]<=n;i++)
+    for(ll i=0;i<primes.size() && primes[i]*primes[i]<=n;i++)
     {
         if(n%primes[i]==0)
         {
@@ -53,7 +53,7 @@ void primeFactorization(ll n)
 
 int main()
 {
-    seive(100010);     /// To factorize N, we need to generate primes up to √N only.
+    seive(100010);     /// To factorize N, we need to generate primes up to sqrt(N) only.
     int t, n;
     cin>>t;
     while(t--)
